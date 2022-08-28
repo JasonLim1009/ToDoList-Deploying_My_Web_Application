@@ -1,0 +1,95 @@
+//351
+How to setup Mongodb Atlas
+
+Overview
+- connect
+- connect with the MongoDB Shell
+- windows
+3.Run your connection string in your command line (hyper)
+copy n paste to hyper
+
+Collections
+- Create Database
+- Insert Document
+newData : "Welcome to your database!"
+  *Insert
+
+______________
+File > New Tab
+> show dbs
+> use test
+> show collections
+> db.test.find()
+> mongod
+
+nodemon app.js
+______________
+
+connect your application
+copy n paste to code
+
+*code (change code) 
+mongoose.connect('mongodb+srv://jason:123456@cluster0.wggzi6v.mongodb.net/todolistDB', {useNewUrlParser: true});
+
+Collections
+   - todolistDB
+      - items
+
+
+
+//352
+Databases to Heroku
+
+git init
+git add .
+git commit -m 'Intial commit'
+heroku login
+heroku create
+touch Procfile
+open Procfile -a Atom
+
+https://devcenter.heroku.com/articles/deploying-nodejs
+***Specify the version of node
+"engines": {
+    "node": "14.x"
+  },
+copy n paste to package.json
+
+node --version
+copy v16.15.1 to change package.json node here:
+"license": "ISC",
+  "engines": {
+    "node": "16.15.1"
+  },
+
+touch .gitignore
+open .gitignore -a Atom
+
+https://devcenter.heroku.com/articles/deploying-nodejs
+***How to keep build artifacts out of git
+/node_modules
+npm-debug.log
+.DS_Store
+/*.env
+copy n paste to .gitignore
+git add .
+git commit -m 'Add gitignore, procfile and update ports'
+git push heroku master
+
+Done--> Url --> click --> can sharing all website to using
+remote:        https://morning-citadel-49993.herokuapp.com/ deployed to Heroku 
+
+
+https://cloud.mongodb.com/v2/62d9067482a88147b3fa1f77#metrics/replicaSet/630b3fa3a1844e70627edf6a/explorer/todolistDB/items/find
+Collections
+   - todolistDB
+      - items
+
+
+
+
+
+
+
+
+
